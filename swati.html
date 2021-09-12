@@ -1,0 +1,1478 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<style type="text/css">
+
+:root{
+	--dark : #143732;
+	--light: #ffffff;
+	--mid: #03bbff;
+	--grey: #d9d9d9;
+	--gradient-light:#86f235;/*#4af6dd;*/
+	--gradient-dark:#87f8bb;/*#00c4cc;*/
+	--black:#000;
+}
+	
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: Montserrat,sans-serif;
+}	
+
+.main
+{
+	min-height: 100vh;
+
+	background-color: var(--dark);
+}
+
+
+.navdiv
+{
+	position: fixed;
+	top:0px;
+	width: 100%;
+	padding: 0.2rem 1.8rem;
+	background-color: var(--dark);
+	border-bottom: 1px solid #fff;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 5;
+	box-shadow: 0 3px 10px #ffffff11;
+}
+
+.logowrapper
+{
+	display: flex;
+}
+.logo
+{
+	color: var(--gradient-light);
+	font-weight: 600;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	background-size: cover;
+	background-position: center;
+	height: 60px;
+	width: 60px;
+	background-image: url('https://i.imgur.com/cG45smL.jpg');
+	background-color: #fff;
+	border-top-left-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-top-right-radius: 10%;
+	border-bottom-right-radius: 10%;
+	box-shadow: 5px 0px 10px #000000dd,
+				-5px 0px 2px var(--gradient-light);
+}
+
+.textlogo
+{
+	font-size: 4em;
+	color:var(--gradient-light);
+	line-height: 60px;
+}
+
+.navlinks
+{
+
+	display: flex;
+}
+
+.navlinks .link a
+{
+	text-decoration: none;
+	color: var(--grey);
+	padding: 1rem;
+	transition: 0.05s;
+}
+
+.navlinks .link a:hover
+{
+	color: var(--gradient-light);
+	font-weight: bold;
+}
+
+.graphicdiv
+{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.smallcircle
+{
+	width: 30vw;
+	height: 30vw;
+	position: absolute;
+
+	border-radius: 50%;
+
+	background-image: linear-gradient(to bottom right,var(--gradient-light), #000);
+
+	bottom:0%;
+	left:-18%;
+}
+
+.smallcircle2
+{
+	width: 60vw;
+	height: 60vw;
+	position: absolute;
+
+	border-radius: 50%;
+
+
+	background-color: #000;
+	top:13%;
+	right:-14%;
+
+	box-shadow: -10px 0 40px #ffffff33;
+}
+
+.maintitle
+{
+	position: absolute;
+	font-size: 3em;
+	font-weight: 750;
+	top:40%;
+	width: 30vw;
+	color: #fff;
+	left: 17%;
+	letter-spacing: 4px;
+	border-top: 5px solid #fff;
+	padding-top: 1rem;
+}
+
+@media (max-width: 900px)
+{
+	.navdiv
+	{
+		padding:0.2rem 1.5rem;
+	}
+
+	.maintitle
+	{
+		font-size: 2em;
+		width: 80vw;
+		left:8%;
+		top:50%;
+	}
+
+	.logo
+	{
+		height: 50px;
+		width: 50px;
+	}
+
+	.textlogo
+	{
+		font-size: 3.4em;
+		line-height: 50px;
+	}
+	.navdiv	.navlinks
+	{
+		display: none;
+	}
+}
+.plant
+{
+	width: 35vw;
+	height: 35vw;
+	background-image: url('https://i.imgur.com/dmPhicW.jpg');
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	right: 22%;
+	top: 13%;
+	/*filter: grayscale(1);*/
+}
+
+.maincontent
+{
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+}
+
+.maininner
+{
+	background-color: #8B0000;
+	width: 95%;
+	max-width: 1200px;
+	margin-top: 4rem;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+}
+
+.postdocinner
+{
+        background-color: #006400;
+        width: 95%;
+        max-width: 1200px;
+        margin-top: 4rem;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+}
+
+.studentinner
+{
+        background-color: #003366;
+        width: 95%;
+        max-width: 1200px;
+        margin-top: 4rem;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+}
+
+.container
+{
+	padding: 50px;
+	padding-top: 10px; 
+	display: flex;
+
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media (max-width: 900px)
+{
+	.maininner .container
+	{
+	padding: 8px;	
+	}
+
+}
+
+.cardcontainer
+{
+	width: 450px;
+	background-color: #fff;
+
+	border-radius: 8px;
+	overflow: hidden;
+
+	box-shadow: 7px 7px 15px #00000088;
+
+	margin: 2rem;
+}
+
+
+.cardtext
+{
+	padding: 1rem;
+	position: relative;
+	height: 200px;
+	overflow-y:scroll; 
+}
+
+.cardtext h3
+{
+	color: #666;
+	letter-spacing: 1px;
+}
+
+.cardtext p
+{
+	margin-top: 1rem;
+}
+
+.morebutton
+{
+	position: absolute;
+	background-color: #666;
+	color:#fff;
+	bottom: 1rem;
+	right: 1rem;
+	padding: 0.3rem;
+	border-radius: 10px;
+	opacity: 0.6;	
+	cursor: pointer;
+}
+
+.morebutton:hover
+{
+	opacity: 1;
+}
+
+.testdiv
+{
+	padding: 100px;
+}
+
+.tcard
+{
+	background-color: #fff;
+	max-width: 350px;
+	height: 250px;
+	padding: 2.5rem;
+	display: grid;
+	place-items:center;
+	margin: 10px;
+	border-radius: 5px;
+	box-shadow:  8px 8px 16px #00000099;
+}
+
+.tcard p
+{
+	font-size: 2em;
+	color: #aaa;
+	font-weight: 400;
+	text-align: center;
+}
+
+.tcard .by
+{
+	padding: 1rem;
+	text-align: right;
+	font-weight: 900;
+	font-size: 1em;
+	color: #c075b7;
+	margin-top: 0.2rem;
+}
+
+.tcontainer
+{
+	padding: 60px;
+
+	display: flex;
+
+	justify-content: space-around;
+}
+
+@media (max-width: 900px)
+{
+	.tcontainer
+	{
+		padding: 0px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.testdiv
+	{
+		padding: 10px;
+	}
+}
+
+.downsection
+{
+	min-height: 50vh;
+	background-color: #0a201d;
+
+	padding-top: 30px;
+}
+
+.dinner
+{
+	margin-top: 2rem;
+	background-color: #16423c;
+	padding: 1rem;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+
+.dsection:nth-child(1){
+	border-right:2px solid #ddd;
+}
+
+.dsection:nth-child(3){
+	border-left:2px solid #ddd;
+
+}
+
+
+@media (max-width: 900px)
+{
+	.dinner
+	{
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+.dsection:nth-child(1){
+	border-bottom:2px solid #ddd;
+	border-right: none;
+}
+
+.dsection:nth-child(3){
+	border-top:2px solid #ddd;
+	border-left: none;
+
+}
+
+}
+
+.dsection
+{
+	width: 100%;
+	min-height: 400px;
+}
+
+.footerdiv
+{
+	padding: 1.5rem;
+	background-color: #0a201d;
+
+	display: flex;
+	justify-content: center;
+
+	color: #fff;
+
+	font-weight: 600;
+	letter-spacing: 2px;
+
+	text-transform: uppercase;
+}
+
+
+
+.hamico
+{
+	font-size: 2em;
+	color: #fff;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width: 900px)
+{
+	.hamico{
+		display: block;
+	}
+}
+
+.mobilenavcontainer
+{
+	background-color: #0a201d;
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	display: grid;
+	place-items:center;
+
+	display: none;
+}
+
+.times
+{
+	font-size: 4em;
+	color: #fff;
+	position: absolute;
+	top:1rem;
+	right: 1.5rem;
+	cursor: pointer;
+}
+
+.mobilenavcontainer .navlinks
+{
+	width: 90%;
+	max-width: 800px;
+	height: 60vh;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.mobilenavcontainer .navlinks .link a
+{
+	font-size: 1.5em;
+	font-weight: 600;
+	color: #ddd;
+}
+
+.mobilenavcontainer .navlinks .link
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s;
+}
+
+.mobilenavcontainer .navlinks .link:hover
+{
+	border-left: 4px solid #fff;
+	border-right: 4px solid #fff;
+}
+
+.aboutussection 
+{
+	background-color: #fff;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	padding-top: 3rem;
+}
+
+.aboutusmidsection
+{
+	padding: 1rem;
+	width: 90%;
+	max-width: 1000px;
+	background-color: #fff;
+	text-align: center;
+	margin-top: 2rem;
+	background-image: linear-gradient(to right, transparent, var(--gradient-light), transparent);
+}
+
+.aucardcontainer
+{
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+
+.aucard
+{
+	background-color: #fff;
+	width: 100%;
+	padding: 1rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	border-radius: 10px;
+	transition: all 0.3s;
+	box-shadow: 5px 10px 10px rgba(255,255,255, 0.5); 
+	cursor: pointer;
+}
+
+.aboutusmidsection:hover .aucard{
+	filter: blur(5px);
+}
+
+.aboutusmidsection .aucard:hover {
+	transform: scale(1.05);
+	filter: blur(0px);
+	box-shadow: 5px 10px 20px rgba(0,0,0, 0.2); 
+}
+
+.aboutusheading
+{
+	border-bottom:  3px solid #fff;
+	padding: 1rem;
+	font-size: 2em;
+	font-weight: bolder;
+}
+
+.aucard h3{
+	margin: 1rem;
+}
+
+.aucard .content
+{
+	margin-top: 0.5rem;
+	text-align: left;
+	padding: 1rem;
+}
+
+.labmemberheading
+{
+	text-align: center;
+	width: 100%;
+	margin-top: 1rem;
+	color: #fff;
+	font-size: 2.5em;
+	border-bottom: 1px solid #fff;
+}
+
+.cardimage
+{
+	height: 280px;
+	background-color: #8B0000;
+	background-size: cover;
+	background-position: center;
+	filter: brightness(1.3);
+	#overflow: hidden;
+}
+
+.labmemberimg
+{
+	width: 100%;
+	height: 100%;
+	object-position: center;
+	object-fit: cover;
+	transition: all 1s;
+	filter: grayscale(100%);
+}
+
+.cardcontainer:hover .labmemberimg
+{
+	transform: scale(1.1);
+	filter: grayscale(0%);
+}
+
+.lmheading
+{
+	position: sticky;
+	top:0px;
+	background-color: #fff;
+	z-index: 2;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+	padding: 0.3rem;
+}
+
+.cimg
+{
+	object-fit: cover;
+	object-position: center;
+}
+
+
+.flexcenter
+{
+ display: flex;
+ justify-content: center;
+}
+
+#myCarousel
+{
+	width: 100%;
+	max-width: 1000px;
+}
+
+.gheading
+{
+	padding: 16px 20px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	color:#fff;
+	text-align: center;
+}
+
+.ourworkscontainer
+{
+	padding: 2rem;
+	background-color: #f6f6f6;
+}
+
+.owlistcontainer
+{
+	padding: 1rem 2rem;
+}
+
+@media (max-width: 600px)
+{
+	.ourworkscontainer
+	{
+		padding: 2rem 0rem;
+	}
+
+	.owlistcontainer
+	{
+		padding: 1rem 0rem;
+	}
+}
+
+.owheading
+{
+	padding: 2rem;
+	border-bottom: 1px solid var(--grey);
+	color:#222;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.owlistcontainer ul
+{
+	margin-top: 1rem;
+	list-style: none;
+
+	max-height: 400px;
+	overflow-y: scroll;
+}
+.owlistcontainer ul li
+{
+	color:#111;
+	margin:1px;
+	background-color: var(--gradient-dark);
+}
+
+
+.liheading
+{
+	font-weight: bolder;
+}
+
+.liheading a
+{
+	padding: 16px 20px;
+	color: #222;
+	font-size: 1.3em;
+	transform: translateY(9px);
+	transition: all 0.2s;
+	display: block;
+	text-decoration: none;
+}
+
+.liheading a:hover
+{
+	transform: translateY(0px);
+	color: #fff;
+	background-color: var(--dark);
+}
+
+
+
+
+
+.licontent
+{
+	font-size: 1.2em;
+}
+
+.owsubheading
+{
+	padding: 1rem;
+	color: #000;
+	font-size: 2em;
+}
+
+.pli
+{
+	padding: 16px 20px;
+	color:#222;
+	font-size: 1.3em;
+	transform: translateY(9px);
+	transition: all 0.2s;
+}
+
+.pli:hover
+{
+	transform: translateY(0px);
+	color: #fff;
+	background-color: var(--dark);
+}
+
+.pli a
+{
+	text-decoration: none;
+	font-weight: bolder;
+	color:inherit;
+	transition: all 0.4s;
+}
+
+.pli a:hover
+{
+	letter-spacing: 1.5px;
+	color: var(--gradient-light);
+}
+
+.eventcontainer
+{
+	background-color: #efe;
+	padding: 1rem;
+}
+
+.eventheading
+{
+	padding: 1rem;
+	color:#333;
+	border-bottom: 1px solid #333;
+	margin:2rem 0rem;
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.eventcardcontainer
+{
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.eventcard
+{
+	display: flex;
+	background-color: #fff;
+	width: 100%;
+	max-width: 1000px;
+	min-height: 200px;
+	overflow: hidden;
+	border-radius: 1rem;
+	transition: 0.3s;
+	margin:2rem 0rem;
+}
+
+.eventcard h2
+{
+	font-size: 1.5em;
+}
+
+.eventimage
+{
+	width: 250px;
+	height: 100%;
+	clip-path: polygon(0 0, 47% 0, 100% 100%, 0% 100%);
+	overflow: hidden;
+	background-color: #03bbff;
+}
+
+.evimg
+{
+	width: 100%;
+	height: 100%;
+	background-color: #03bbff;
+	object-fit: cover;
+	object-position: center;
+}
+
+.evcontent
+{
+	padding: 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-direction: column;
+	padding-left: 2rem;
+	width: 70%;
+}
+
+@media (max-width: 600px)
+{
+	.eventcard
+	{
+		flex-direction: column;
+		height: auto;
+	}
+
+	.eventimage
+	{
+		width: 100%;
+		height: 250px;
+		clip-path: polygon(0 0, 100% 0%, 100% 58%, 0% 100%);
+	}
+
+	.evcontent
+	{
+		width: 100%;
+	}
+}
+.eventcard:hover
+{
+	box-shadow: 5px 10px 20px rgba(0,0,0,0.2);
+	transform: translateY(-5px);
+}
+
+
+.wavecontainer
+{
+	background-color: #fff;
+	position: relative;
+}
+
+.svgcontainer
+{
+	position: relative;
+	height: 20vw;
+}
+
+.svgcontainer svg
+{
+	position: absolute;
+	z-index: 1;
+	bottom: 0px;
+}
+
+.whitegradientcontainer
+{
+	background-image: linear-gradient(to bottom,var(--gradient-light),#fff);
+	height: 20vw;
+	width: 100%;
+	transform: translateY(-2px);
+}
+
+.greenbackdup
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
+
+.greenbackinner
+{
+	width: 95%;
+	background-image: linear-gradient(to bottom,var(--dark),#fff);
+	height: 100%;
+	max-width: 1200px;
+}
+
+.cursor{
+	color: #fff;
+	animation: blink 1s linear infinite;
+}
+
+@keyframes blink
+{
+	0%{
+		opacity: 1;
+	}
+
+	50%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
+</style>
+
+<link rel="stylesheet" type="text/css" href="https://lab.hakim.se/scroll-effects/css/stroll.css">
+
+</head>
+<body>
+
+
+<div class="mobilenavcontainer">
+	<div class="times" onclick="closemnav();">&times;</div>
+
+	<div class="navlinks">
+		<div class="link">
+			<a href="#herocontent" onclick="closemnav()">Home</a>
+		</div>
+		<div class="link">
+			<a href="#aboutusid" onclick="closemnav()">About SWATI</a>
+		</div>
+		<div class="link">
+			<a href="#labmembersid" onclick="closemnav()">WiS Faculty</a>
+		</div>
+		<div class="link">
+			<a href="#wispostdoc" onclick="closemnav()">WiS PostDocs</a>
+		</div>
+		<div class="link">
+			<a href="#wistudents" onclick="closemnav()">WiS Students</a>
+		</div>
+
+	</div>
+
+
+</div>
+
+<div class="main">
+	
+<div class="navdiv">
+	<div class="logowrapper">
+		<div class="logo">
+	</div>
+	<div class="textlogo">SWATI</div>
+	</div>
+
+	<div class="navlinks">
+		<div class="link">
+			<a href="#herocontent">Home</a>
+		</div>
+		<div class="link">
+			<a href="#aboutusid">About SWATI</a>
+		</div>
+		<div class="link">
+			<a href="#labmembersid">WiS Faculty</a>
+		</div>
+		<div class="link">
+			<a href="#wispostdoc">WiS PostDocs</a>
+		</div>
+		<div class="link">
+			<a href="#wistudents">WiS Students</a>
+		</div>
+
+	</div>
+
+	<div class="hamico" onclick="openmnav();">&#9776;</div>
+</div>
+
+
+<div id="herocontent" class="graphicdiv">
+	
+	<div class="smallcircle"></div>
+
+	<div class="smallcircle2">
+		<div class="plant"></div>
+	</div>
+
+	<div class="maintitle">"Science for Women: A Technology and Innovation" Portal <span class="cursor">|</span></div>
+</div>
+
+
+<script type="text/javascript">
+
+	let totalstr = Science for Women: A Technology and Innovation Portal;
+	let maintitle = document.querySelector('.maintitle');
+
+	let mtstr = "";
+	let mtit = 0;
+
+	function addchar()
+	{
+		let ch = totalstr[mtit++];
+			mtstr += ch;
+
+		if(mtit == totalstr.length)
+		{
+			mtit = 0;
+			mtstr = "";
+		}
+
+		maintitle.innerHTML = mtstr+"<span class='cursor'>|</span>";
+	}
+
+	setTimeout(()=>{setInterval(addchar,500)},3000);
+
+</script>
+
+<div id="aboutusid" class="aboutussection">
+
+	<div class="aboutusmidsection"> 
+	<div class="aboutusheading">
+		About SWATI
+	</div>
+
+
+	<div class="aucardcontainer">
+		<div class="aucard"> 
+			<h3>An Initiative of the DBT</h3>
+			<div class="content">
+				In recognition of the wide ranging contributions by Women in Science, Secretary DBT announced an online portal dedicated to all Women Scientists funded by Department of Biotechnology. The portal will be called "SWATI" Portal (Science for Women: A Technology and Innovation Portal).
+<br>
+The SWATI portal is intended to serve as a Gateway to view the Expertise and Contributions of Indian Women in Science, specially to mark the 75th year of Indian Independence, in celebration of Azadi Ka Amrit Mahotsav.
+			</div>
+		</div>
+		<div class="aucard"> 
+			<h3>Data Collection for SWATI</h3>
+			<div class="content">
+				In order to accurately create this portal on behalf of the DBT, the NIPGR HRD Cell has collated first hand information from Indian women researchers who have been funded by the DBT, including PIs, post docs and students. 
+			</div>
+		</div>
+	
+		<div class="aucard"> 
+			<h3>How to become part of SWATI</h3>
+			<div class="content">
+				In case you would like to join the portal, please provide your data by clicking <a href=
+https://forms.gle/MdWytd9kSa75UGPq9>Here</a>.
+<br>
+The form can be filled in a few minutes, and will help us get accurate information.
+
+			</div>
+		</div>
+	
+	</div>
+	</div>
+</div>
+
+<div class="maincontent">
+	<div id="labmembersid" class="maininner">
+		<div class="labmemberheading">BROWSE SWATI: WiS FACULTY</div>
+	<div class="container">
+		
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/l9MMyyo.png" class="labmemberimg">
+			</div>
+			<div class="cardtext">
+
+			<h3>Dr. Gitanjali Yadav</h3>	
+<p>Dr. Gitanjali Yadav is a Scientist at NIPGR and a Lecturer at the University of Cambridge, on a Joint Deputation Program between India and the U.K, where she divides her time between India and the U.K for teaching and research. She is an expert in Genomics and Artificial Intelligence, with applications in food security and Conservation. Dr. Yadav has received several awards, including the Hamied Fellowship from the University of Cambridge, Exceptional Talent Award from the Royal Society of London, INSA Medal, and very recently, the SASTRA Obaid Siddiqi Life Science Award 2021. She has a diverse educational background with a Ph.D. in Immunology, a Master's degree in Biomedical Research and a Graduate degree in Botany, from the University of Delhi, India. 
+Dr. Yadav promotes science as a way of life to students in schools and colleges, and has been a mentor for Women in Science (WiS) at the British Ecological Society, as well as an ambassador of Indian young scientists, at the World Science Forum, Budapest and CNRS, Paris. 
+During the Coronavirus Pandemic, Dr. Yadav has been conducting a series of free online training programs in Data Science and Complex Networks, under the name “Protocols From Home”, in order to help students pick up vital skills in Computational Biology and make the best use of their time under global lockdown.  
+</p>		
+</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/QdFJAWn.png" class="labmemberimg">
+			</div>
+			<div class="cardtext">
+
+			<h3>Dr. Preeti Sharma </h3>	
+			<p>I have been engaged in teaching an research in the field of microbial biotechnology and enzymology since 2007 as Assistant Professor. I have completed two research projects; one from UGC and other from DBT. Two students have been awarded PhD under my supervision and two are currently pursuing PhD. I have guided more than 30 M.Sc./ B.Tech. students for their project work.
+			</p>
+			
+		</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage">				
+				<img src="https://i.imgur.com/RMs7CZl.png" class="labmemberimg"></div>
+			<div class="cardtext">
+
+			<h3>Dr. Malancha Ta</h3>	
+			<p>After my Ph.D, I moved to the National Institutes of Health (NIH), Bethesda, USA to do my post doctoral studies under the supervision of Dr. Nadya Lumelsky, NIDDK and worked on expansion of pancreatic progenitor/stem cells from adult mouse pancreas. My second postdoctoral training was on making pancreas specific kockout of GDF11 and studying its role in pacreas development under the guidance of Dr. Alexandra McPherron, NIDDK, NIH.  Next I moved I moved to Bangalore, India as a Principal Scientist of the diabetes group at Stempeutics Research Pvt Ltd and Adjunct Professor of Manipal Institute of Regenerative Medicine. Here my research involved studying the expansion, characterization and differentiation of mesenchymal stem cells (MSCs) derived from the human umbilical cord with an aim to apply cell based therapy towards diabetes.
+Currently I hold the position of Associate Professor at IISER, Kolkata where my research focus is understanding viability and adhesion/migration of human MSCs under different physiological stress conditions. I also teach various theory and practical courses like, Cell Biology, Molecular Genetics, animal physiology, tissue culture, PCR/qRT-PCR, cloning etc.
+			</p>
+			
+		</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/3Wq5mkd.png" class="labmemberimg" style="object-position: top;">
+			</div>
+			<div class="cardtext">
+
+			<h3>Dr. Meenu Kapoor</h3>	
+			<p>Dr. Meenu Kapoor did her M.Sc. in Plant Molecular Biology from Delhi University, South Campus. She then moved to Japan in 1992 where she completed her Ph.D. at the Center for Gene Research under the guidance of Prof. Masahiro Sugiura at Nagoya University. Thereafter, she joined the Japanese Ministry of Agriculture, Forestry and Fisheries (MAFF) in 1997 where she worked as Research Scientist in the Center of Excellence Project at the National Institute of Agro-biological Sciences (NIAS) at Tsukuba Science City near Tokyo. While in NIAS, she characterized the role of a floral homeotic gene which could be used for improving the morphology of flowers (patents granted in United States, Australia, Europe and Japan). Since 2004, she is working in the School of Biotechnology at Guru Gobind Singh Indraprastha University and her research interests lie in studying evolution of epigenetic gene regulatory mechanisms and in elucidating the functions of the core components of the DNA methylation machinery in land plants. She was elected fellow of the National Academy of Sciences Allahabad in 2016 and received the Dr. P. Sheel Memorial (Young Woman Scientist) Lecture Award (2017) from NASI.
+			</p>
+			
+		</div>
+		</div>
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/PtlwMCJ.png" class="labmemberimg" style="object-position: top;">
+			</div>
+			<div class="cardtext">
+
+			<h3>Dr. Brototi Roy</h3>
+			<p>I am a passionate teacher and a researcher with a zest of sharing the wonders of science with my students. I have published many research papers in peer reviewed international journals of high impact factor. At present i am guiding the Ph.D thesis of 2 students. I have completed a DBT-BIOCare major project in the year 2021. At the same time, i have also completed many minor research projects funded by DBT-STAR Scheme with my undergraduate students.  At present, i am a member of Department Research Committee of Department of Zoology, University of Delhi and also a nominated member of Board of Research Studies of Faculty of Sciences, University of Delhi. I am one of the founding member of Centre for Research in Maitreyi College and since its inception in 2017, have overseen the completion of 100 summer internship programs by the undergraduate students guided by faculty member. I was one of driving force behind the publication of biannual, multidisciplinary Journal, Vantage: Journal of Thematic Analysis (ISSN:  2582-7391)  by Centre for Research Maitreyi College. As a member of board of editor, we have been able to publish 3 issues of the journal on very relevant themes till date and are gearing for the next issue in October, 2021. 
+			</p>
+			
+		</div>
+		</div>
+
+	</div>		
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute.min.js"></script>
+
+<div class="wavecontainer">
+	<div class="greenbackdup"><div class="greenbackinner"></div></div>
+	<div class="svgcontainer">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+			<path id="path2"  fill="var(--gradient-dark)" fill-opacity="0.5" d="M0,192L48,165.3C96,139,192,85,288,101.3C384,117,480,203,576,229.3C672,256,768,224,864,197.3C960,171,1056,149,1152,154.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+
+			<path id="path1" fill="var(--gradient-light)" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+
+		</svg>
+	</div>
+
+
+	<div class="whitegradientcontainer">
+		
+	</div>
+</div>
+
+# STARTING NEW SECTION
+<div class="maincontent">
+	<div id="wispostdoc" class="postdocinner">
+		<div class="labmemberheading">BROWSE SWATI: WiS POSTDOCS</div>
+	<div class="container">
+		
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/CqnIFhV.png" class="labmemberimg">
+			</div>
+			<div class="cardtext">
+
+			<h3>Dr. Kakali Ghoshal</h3>	
+<p>I passed 10 and 10+2 board exams (science stream) in first divisions. I graduated with first class in honours. I was involved in various science projects/workshops in my entire student life (before joining PhD). I also presented my Masters' project research work in an international conference. During my PhD life, I got more exposures in presenting my work in different national/international seminars. I did several workshops in atomic force microscopy, flow cytometry etc. 
+</p>		
+</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/35JBXXT.png" class="labmemberimg">
+			</div>
+			<div class="cardtext">
+
+			<h3>Dr. Sohini Bhattacharya </h3>	
+			<p>Sohini has received education and research experiences at some of the premiere institutions of the world, e.g., JNCASR and Rice University. Even at such an early career stage, she has authored 19 peer reviewed papers in extremely prestigious journals, which have gathered very high citations over the years. She has presented her work in reputed international forums (IFSOE, Moscow, Russia, 2016; IUCr Conference, Hyderabad, India, 2017; MOF 18 Conference, Auckland, New Zealand, 2018; IWAM 2019, Ras al Khaimah, UAE, 2019) and other national conferences. She was one of the top ten finalists of the Dragon’s Den Competition, IUCr, 2017 and Falling Walls Lab India, 2018. She also received the RSC Oral Presentation Prize at the RSC Roadshow held at JNCASR in November, 2019. She has been a consistent performer and received INSPIRE Scholarship for her academic performance. She has also been the part of several outreach activities involving the propagation of science among underprivileged children, e.g., Students Mentorship Program, Student Buddy Program or West Bengal District School Scheme. She is the first student with a PhD from India to have received the extremely prestigious Rice Academy Postdoctoral Fellowship.
+			</p>
+			
+		</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage">				
+				<img src="https://i.imgur.com/C6PWuCs.png" class="labmemberimg"></div>
+			<div class="cardtext">
+
+			<h3>Dr. Archana Sharma</h3>	
+			<p>"My research experience encompasses work across the disciplines of industrial microbiology, molecular biology and protein chemistry. My exposure to scientific research started in 2004 with my M.Sc. final year dissertation in 2004 at CCMB Hyderabad, during which I was part of a project entitled “Y-chromosome and mt DNA phylogeny of Halba tribe of Chhattisgarh”. In Sep 2006, I joined Dept. of Microbiology, University of Delhi South Campus for a Ph.D. after which I worked as a Research Associate at ICGEB, New Delhi; on the process development and optimization for production recombinant Plasmodium falciparum proteins for use as vaccine candidates. I have been awarded a BioCARE research grant by Department of Biotechnology for “Structural and functional characterization of archaeal CsaA chaperone proteins”. Currently, I have been awarded Research Associate fellowship from ICMR.
+			</p>
+			
+		</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/2uFkP96.png" class="labmemberimg" style="object-position: top;">
+			</div>
+			<div class="cardtext">
+
+			<h3>Dr. Sujata Kumari</h3>	
+			<p>Developed high biomass yielding strains of microalgae. This resulted in two patents for Reliance industries Ltd
+			</p>
+			
+		</div>
+		</div>
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/Yegby6z.png" class="labmemberimg" style="object-position: top;">
+			</div>
+			<div class="cardtext">
+
+			<h3>Dr. Shriya Saha</h3>
+			<p>"In my first study, screening of macrophage antioxidant enzymes during infection revealed marked upregulation of the heme-degrading enzyme, heme oxygenase-1 (HO-1). In my next study, we aimed to gain mechanistic understanding of the molecular events used by the parasite to upregulate HO-1. Further to this, we showed that Leishmania exploits transcriptional repressor activating transcription factor 3(ATF3) to inhibit proinflammatory responses. Collectively we documented that Leishmania upregulates NRF2 to activate antioxidant enzyme HO-1 and epigenetic modulator ATF3 to inhibit ROS and pro-inflammatory cytokine production necessary for propagating infection. Overall this work dissects the survival strategies adopted by the parasite which will help in development of newer generation of drugs and also shed light on the host-pathogen interaction which can be extended to other intramacrophage pathogens.
+			</p>
+			
+		</div>
+		</div>
+
+	</div>		
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute.min.js"></script>
+
+<div class="wavecontainer">
+	<div class="greenbackdup"><div class="greenbackinner"></div></div>
+	<div class="svgcontainer">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+			<path id="path2"  fill="var(--gradient-dark)" fill-opacity="0.5" d="M0,192L48,165.3C96,139,192,85,288,101.3C384,117,480,203,576,229.3C672,256,768,224,864,197.3C960,171,1056,149,1152,154.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+
+			<path id="path1" fill="var(--gradient-light)" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+
+		</svg>
+	</div>
+
+
+	<div class="whitegradientcontainer">
+		
+	</div>
+</div>
+
+# STARTING NEW SECTION
+<div class="maincontent">
+	<div id="wistudents" class="studentinner">
+		<div class="labmemberheading">BROWSE SWATI: WiS STUDENTS</div>
+	<div class="container">
+		
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/4rp7v2V.png" class="labmemberimg">
+			</div>
+			<div class="cardtext">
+
+			<h3>Harsha Rohira</h3>	
+<p>I am a full time Ph.D scholar working in the area of peptide mediated therapeutics for ocular diseases. My core area of research is in Fungal Keratitis and Keratoconus. In post graduation, I have worked on antimicrobial as well as genetic homogeneity aspects of Mentha sp. plants grown in different plant tissue culture media. During my graduation, I worked with OSDD, CSIR in their international Tuberculosis project. In Phase 1 of the project, I was the team mentor in a group dedicated for curating Mycobacterium tuberculosis genes. Phase 2 of the project involved molecular biology work for cloning and expression of Mycobacterium tuberculosis genes. 
+In future, I wish to work in the area of therapeutics for diseases poorly responding to standard therapies. "
+</p>		
+</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/FSgiva0.png" class="labmemberimg">
+			</div>
+			<div class="cardtext">
+
+			<h3>Gargi Vats</h3>	
+			<p>I've done undergraduate innovation research project on food toxicity then in masters I did internship in Maharashtra on landuse pattern of animals like golden jackal and Indian fox, under Dr. Sumit Dookia (internal guide) and Dr. Abi Tamim Vanak, ATREE, Bangalore. Then I did my 6 months dissertation under Dr. Sumit Dookia (internal guide), Dr. Abi Tamim Vanak, ATREE, Bangalore and Dr. Shomen Mukherjee, Azim Premji University on the topic 'Assessing response of nocturnal rodents to prosopis juliflora in Banni grassland, Kachchh, Gujarat' in Kachchh, Gujarat.
+			</p>
+			
+		</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage">				
+				<img src="https://i.imgur.com/uKUyfYb.png" class="labmemberimg"></div>
+			<div class="cardtext">
+
+			<h3>Laxmi N.J</h3>	
+		<p>Laxmi is a student at ICT Mumbai presently</p>	
+		</div>
+		</div>
+
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/OJkJfaa.png" class="labmemberimg" style="object-position: top;">
+			</div>
+			<div class="cardtext">
+
+			<h3>Simran Singh</h3>	
+			<p>My fascination towards Science was developed at a very early stage and I was fortunate enough that I got some golden opportunity in past and present to explore science and research with hands on experience. In my U.G, I did three years advanced work experience certification course in cell biotechnology, helped me to develop deep knowledge about various lab. Techniques and research methodology. Participated in five days international workshop on “Chromatography based protein purification and characterization technique” organized by South Asian University (SAU), New Delhi. Completed M.Sc. thesis work on “Molecular and morphological diversity analysis in Rice genotypes (Oryza sativum L.) using SSR markers” under the supervision of Prof. S. K. Singh, Genetics and Plant Breeding, BHU, Varanasi.  Have attended various workshop on computational biology like learning R programming, Machine learning  etc.                                                                                       
+			</p>
+			
+		</div>
+		</div>
+
+		<div class="cardcontainer">
+			<div class="cardimage" >
+				<img src="https://i.imgur.com/l9YiPHt.png" class="labmemberimg" style="object-position: top;">
+			</div>
+			<div class="cardtext">
+
+			<h3>Divya Gupta</h3>
+			<p>I worked as a core team for establishing Covid testing at CCMB, and currently am involved in culturing the SARS-CoV2 strains, which would help in updating our understanding and designing new therapeutics 
+			</p>
+			
+		</div>
+		</div>
+
+	</div>		
+	</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/kute.js/1.6.2/kute.min.js"></script>
+
+<div class="wavecontainer">
+	<div class="greenbackdup"><div class="greenbackinner"></div></div>
+	<div class="svgcontainer">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+			<path id="path2"  fill="var(--gradient-dark)" fill-opacity="0.5" d="M0,192L48,165.3C96,139,192,85,288,101.3C384,117,480,203,576,229.3C672,256,768,224,864,197.3C960,171,1056,149,1152,154.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+
+			<path id="path1" fill="var(--gradient-light)" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+
+		</svg>
+	</div>
+
+
+	<div class="whitegradientcontainer">
+		
+	</div>
+</div>
+
+# STARTING NEW SECTION
+
+<div id="gcid" class="gallerycontainer">
+	  <div class="gheading"><h2>INDIA WiS Gallery</h2></div>
+
+<div class="flexcenter">		
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img class="cimg" src="https://i.imgur.com/cG45smL.jpg" alt="Los Angeles" style="width:100%; height:70vh;">
+        <div class="carousel-caption">
+          <!--h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p-->
+        </div>
+      </div>
+
+      <div class="item">
+        <img class="cimg" src="https://i.imgur.com/pxjVFgb.jpg" alt="Chicago" style="width:100%; height:70vh;">
+        <div class="carousel-caption">
+          <!--h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p-->
+        </div>
+      </div>
+    
+      <div class="item">
+        <img class="cimg" src="https://i.imgur.com/Jn449YM.jpg" alt="New York" style="width:100%; height:70vh;">
+        <div class="carousel-caption">
+          <!--h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p-->
+        </div>
+      </div>
+  
+      <div class="item">
+        <img class="cimg" src="https://i.imgur.com/yQXqXpY.jpg" alt="New York" style="width:100%; height:70vh;">
+        <div class="carousel-caption">
+          <!--h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p-->
+        </div>
+      </div>
+      <div class="item">
+        <img class="cimg" src="https://i.imgur.com/rve4lCQ.jpg" alt="New York" style="width:100%; height:70vh;">
+        <div class="carousel-caption">
+          <!--h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p-->
+        </div>
+      </div>
+      <div class="item">
+        <img class="cimg" src="https://i.imgur.com/qBQBNd2.png" alt="New York" style="width:100%; height:70vh;">
+        <div class="carousel-caption">
+          <!--h3>Los Angeles</h3>
+          <p>LA is always so much fun!</p-->
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+
+
+<div class="footerdiv">@ copyright NIPGR HRD CELL 2021 </div>
+</div>
+
+
+
+</body>
+</html>
+
